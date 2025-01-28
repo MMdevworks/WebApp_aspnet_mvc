@@ -25,6 +25,12 @@ namespace WebApp_aspnet_mvc.Controllers
             return View(await _context.Content.ToListAsync());
         }
 
+        // GET: Contents/ShowSearchForm
+        public async Task<IActionResult> ShowSearchForm()
+        {
+            return View();
+        }
+
         // GET: Contents/Details/5
         public async Task<IActionResult> Details(int? id)
         {
